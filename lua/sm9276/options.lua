@@ -2,7 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ' '
 
-vim.o.clipboard = 'unnamedplus'
 
 --Relative Number on sidebar
 vim.o.relativenumber = true
