@@ -1,5 +1,7 @@
 return{
 	{"mbbill/undotree"},
+
+    {"ThePrimeagen/harpoon", branch = "harpoon2",dependencies = { "nvim-lua/plenary.nvim" }},
 	{"theprimeagen/harpoon"},
 	{"williamboman/mason.nvim"},
 	{"williamboman/mason-lspconfig.nvim"},
