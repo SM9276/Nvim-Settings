@@ -1,6 +1,6 @@
 return{
 	{"mbbill/undotree"},
-
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
     {"ThePrimeagen/harpoon", branch = "harpoon2",dependencies = { "nvim-lua/plenary.nvim" }},
 	{"theprimeagen/harpoon"},
 	{"williamboman/mason.nvim"},
@@ -13,8 +13,9 @@ return{
 	{"vhyrro/luarocks.nvim", priority = 1000, config = true,},
 	{"tpope/vim-fugitive"},
 	{"numToStr/comment.nvim", config = function() require("Comment").setup() end },
-	{ "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}, config = function() vim.cmd[[colorscheme tokyonight-night]] end },
 	{"hrsh7th/nvim-cmp", dependencies = {'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip', 'rafamadriz/friendly-snippets', 'hrsh7th/cmp-nvim-lsp',  }, },
     {'nvim-lualine/lualine.nvim', dependencies = { "nvim-tree/nvim-web-devicons"}, config = function() require("lualine").setup({ icons_enabled = true, theme = 'onedark', }) end, },
-
+	{"hrsh7th/nvim-cmp", dependencies = {'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip', 'rafamadriz/friendly-snippets', 'hrsh7th/cmp-nvim-lsp',  }, },
+    {'nvim-lualine/lualine.nvim', dependencies = { "nvim-tree/nvim-web-devicons"}, config = function() require("lualine").setup({ icons_enabled = true, theme = 'onedark', }) end, },
+    { "EdenEast/nightfox.nvim"} 
 }
